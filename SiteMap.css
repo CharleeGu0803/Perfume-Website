@@ -1,0 +1,10 @@
+.SiteMapArea{
+    position: relative;
+    width: 1410px;
+    left: 50px;
+}
+.SiteMapArea h2{
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top:8px;;
+}

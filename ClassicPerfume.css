@@ -1,0 +1,94 @@
+
+@font-face {
+    font-family: "KaushanFont";
+    src: url("Font/KaushanScript-Regular.otf");
+  }
+
+.Main{
+    position: relative;
+    width:1410px;
+    left: 50px;
+}
+.Main h2{
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top:8px;;
+}
+
+.PerfumeHistoryVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px;
+}
+
+.PerfumeIntro{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.Intro {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.Intro h3{
+    font-size: 40px;
+    font-family:"KaushanFont", serif;
+}
+.Intro h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.divider {
+    height: auto; /* Adjust this to ensure the divider spans the entire content height */
+    width: 2px;
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-self: stretch; /* Ensure the divider stretches to the full height of the container */
+}
+
+.details {
+    margin-top: 20px;
+    text-align: left;
+    flex: 1;
+}
+
+.details div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+/* Show a pair of info in a line */
+.details dt, .details dd {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.details dt {
+    width: 100px;
+    font-weight: bold;
+}
+
+.Comments {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
+}

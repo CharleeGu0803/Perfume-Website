@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--link to css file-->
+	<link rel="stylesheet" href="StyleDark.css" id="stylesheetLink">
+	<title>Scentopia:Explore Your Fragrance World</title>
+</head>
+
+<body>
+	<!--Installation code of icon-->
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<div class = "CTA1">
+		<h1 id="question">How did people from different regions in ancient times use perfume?</h1>
+		<h2 id="button"><a href="History.html" aria-label="HistoryPage" >Find out now</a></h2>
+	</div>
+
+	<!--This is website title and navigation area-->
+	<div class = "TopNav">
+		<div class="Logo"></div>
+
+		<h2 class="WebsiteTitle"><a href="index.html"  aria-label="Homepage">Scentopia: Fragrance Odyssey</a></h2>
+
+		<ul class="NavRight">
+			<!--This is "Basics of Perfume" area-->
+			<li><a href="">Basics of Perfume</a><span>|</span>
+				<div class="slide1">
+					<ul>
+						<li><a href="History.html" aria-label="Perfume history">History of Perfume</a></li>
+						<li><a href="ClassicPerfume.html"aria-label="Introduce classic perfumes">Classic Perfumes</a></li>
+						<li><a href="">Composition of Perfume</a></li>
+						<li><a href="">Usage and Storage of Perfume</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<!--This is "Perfume Exploration Journey" area-->
+			<li><a href="">Perfume Exploration Journey</a><span>|</span>
+				<div class="slide2">
+					<ul>
+						<li><a href="PerfumeGallery.html" aria-label="Display beautiful perfume bottles">Perfume Bottles Gallery</a></li>
+						<li><a href="">Fragrance Mood Museum</a></li>
+						<li><a href="">Private Perfumery</a></li>
+					</ul>
+				</div>
+			</li>
+			
+			<!--This is "Latest Information" area-->
+			<li><a href="">Latest Information</a><span>|</span>
+				<div class="slide3">
+					<ul>
+						<li><a href="">Latest News</a></li>
+						<li><a href="">Latest Production</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<!--This is "About Us" area-->
+			<li><a href="">About Us</a><span>|</span>
+					<div class ="slide4">
+						<ul>
+							<li><a href = "MyPassion.html" aria-label="About why the author created this website">My passion</a></li>
+							<li><a href = "SiteMap.html" aria-label="Display all website links">Site Map</a></li>
+							<li><a href = "FeedbackForm.html" aria-label="Website User Feedback Form">Feedback Form</a></li>
+							<li><a href = "AboutSite.html" aria-label="Reflect on the author's website design">About Site</a></li>
+							<li><a href = "Verification.html" aria-label="Verification Report Screenshot">Verification</a></li>
+						</ul>
+					</div>
+			</li>
+			
+			<li id="Nav_ass"><a href="assignment.html" aria-label="Assignemnt requirements and their corresponding links.">Assignment</a></li>
+		</ul>
+
+		<ul class = "Switch">
+			<li><button id="buttonDark" onclick="switchStyleDark()" aria-label="Switch to Dark Mode"></button></li>
+			<li><button id="buttonLight" onclick="switchStyleLight()" aria-label="Switch to Light Mode"></button></li>
+		</ul>
+
+	</div>
+
+	<div class="HomepageView">
+		<div class="blurred-background"></div> <!-- 新增的用于背景的子容器 -->
+		<div class = "CTA2">
+			<h2><a href="PerfumeGallery.html" aria-label="Display beautiful perfume bottles">Explore Perfume Gallery</a></h2>
+		</div>
+	</div>
+
+	<div class = "SocialMedia">
+		<p>Welcome to Share Website!</p>
+
+		<a href="https://www.facebook.com/sharer/sharer.php?u=https://stuweb.cecs.anu.edu.au/~u7777749/index.html" target="_blank" aria-label="facebook sharelink">
+			<ion-icon name="logo-facebook"></ion-icon>
+		</a>
+		<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://stuweb.cecs.anu.edu.au/~u7777749/index.html" target="_blank" aria-label="linkedin sharelink">
+			<ion-icon name="logo-linkedin"></ion-icon>
+		</a>
+		<a href="https://twitter.com/intent/tweet?text=https://stuweb.cecs.anu.edu.au/~u7777749/index.html" target="_blank" aria-label="twitter sharelink">
+			<ion-icon name="logo-twitter"></ion-icon>
+		</a>
+	</div>
+
+	<!--This is javascript code for changing theme CSS-->
+	<script>
+	function switchStyleDark() {
+		var stylesheet = document.getElementById('stylesheetLink');
+		if (stylesheet.href.includes('StyleLight.css')) {
+			stylesheet.href = 'StyleDark.css';
+		}}
+	function switchStyleLight() {
+		var stylesheet = document.getElementById('stylesheetLink');
+		if (stylesheet.href.includes('StyleDark.css')) {
+			stylesheet.href = 'StyleLight.css';
+		}}
+	</script>
+
+   
+	
+</body>
+</html>

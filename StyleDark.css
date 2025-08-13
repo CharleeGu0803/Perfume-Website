@@ -1,0 +1,293 @@
+@font-face {
+    font-family: "KaushanFont";
+    src: url("Font/KaushanScript-Regular.otf");
+  }
+
+/* reset whole website page */
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin:0;
+  font-family: 'Times New Roman', Times, serif;  /* 指定字体 */
+  font-size: 16px;  /* 指定基础字体大小 */
+}
+
+/*Top Navigation Start*/
+.TopNav{
+  /* width = page width */
+  width:100%;
+  height:60px;
+  background-color:black;
+  border-top: 2px solid palevioletred;/* 顶部装饰粉色线 */
+  border-bottom: 2px solid white;
+}
+.WebsiteTitle{
+  margin:0;
+  float: left;
+  font-family: "KaushanFont", serif;
+  line-height:60px;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+.WebsiteTitle a{
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  font-size: 24px;
+  color: white;
+}
+.TopNav>.NavRight{
+  float: right;
+  padding-right: 5px;
+}
+.TopNav>.NavRight li{
+  float: left;
+  list-style: none;
+  margin-top: 5px;
+}
+.TopNav>.NavRight>li>a{
+  color:white;
+  font-size: 16px;
+  margin:0 6px;
+  margin-bottom: 4px;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid transparent; /*Initial state with a transparent border 初始状态下透明边框 */
+  border-radius: 4px; 
+}
+.TopNav>.NavRight>li>a:hover{
+  background-color:white;
+  color: black;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+/* span */
+.TopNav>.NavRight>li>span{
+  color: aliceblue;
+}
+/*Top Navigation end*/
+
+/*Switch Start*/
+.Switch {
+  float: left; /* 或者 right，根据你的布局需求调整 */
+  padding: 0;
+  margin: 8px ; /* 按需调整间距 */
+  list-style-type: none; /* 移除列表项目前的标记 */
+}
+
+/* 基本按钮样式，确保宽度和高度相同，形成完整的圆形 */
+.Switch button {
+  width: 15px; /* 宽度 */
+  height: 15px; /* 高度，与宽度相同以形成圆形 */
+  text-decoration: none; /* 移除下划线 */
+  display: inline-block; /* 使按钮保持行内块状 */
+  margin: 4px 2px; /* 外边距 */
+  cursor: pointer; /* 鼠标悬浮时显示指针 */
+  border-radius: 50%; /* 圆角效果，创建完整的圆形 */
+  transition: background-color 0.3s, color 0.3s; /* 过渡动画 */
+  overflow: hidden; /* 防止内容溢出 */
+}
+
+
+/* 黑色按钮样式 */
+#buttonDark {
+  background-color: black; /* 背景颜色 */
+  border:1px solid palevioletred;
+}
+
+/* 白色按钮样式 */
+#buttonLight {
+  background-color: white; /* 背景颜色 */
+  border:1px solid palevioletred;
+}
+
+/* 黑色按钮悬停样式 */
+#buttonDark:hover {
+  background-color: #acabab; /* 深灰色背景 */
+}
+
+/* 白色按钮悬停样式 */
+#buttonLight:hover {
+  background-color: #acabab; /* 浅灰色背景 */
+}
+
+/*Switch End*/
+
+/* Pop up window start */
+.slide1{
+  height:100px;
+  width:230px;
+  background-color: white;
+  position: absolute;
+  border-radius: 4px;
+  border:1px solid black;
+  z-index: 2;
+  display: none;
+}
+.slide2{
+  height:75px;
+  width: 200px;
+  background-color: white;
+  position: absolute;
+  border-radius: 4px;
+  border:1px solid black;
+  z-index: 2;
+  display: none;
+}
+.slide3{
+  height: 55px;
+  width:150px;
+  background-color: white;
+  position: absolute;
+  border-radius: 4px;
+  border:1px solid black;
+  z-index: 2;
+  display: none;
+}
+.slide4{
+  height:125px;
+  width:130px;
+  background-color: white;
+  position: absolute;
+  border-radius: 4px;
+  border:1px solid black;
+  z-index: 2;
+  display: none;
+}
+
+[class^="slide"] ul{
+  list-style: none;
+}
+[class^="slide"] ul a{
+  text-decoration: none;
+  color:black;
+  margin-left: -20px;
+  z-index:2;
+}
+/* Popup window appears when the mouse is over the "About us" button */
+/*鼠标位于按键“About us”时弹出窗口*/
+.TopNav>.NavRight>li:hover > [class^="slide"]{
+  display:block;
+  transition: all 0.3s ease;
+}
+/* Popup window does not disappear when the mouse is over the popup window */
+/*鼠标位于弹出窗口时，窗口不消失*/
+[class^="slide"]:hover{
+  display: block;
+}
+/* Underline appears when the mouse hovers over the button */
+/*鼠标触碰按键显示下划线*/
+[class^="slide"] ul a:hover{
+  text-decoration:underline;
+}
+/* Pop up window end */
+
+/*CTA1 statrt*/
+.CTA1{
+  height: 40px;
+  width:100%;
+  background-color:rgb(243, 243, 243);
+  display: flex; /* 使用flexbox布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  }
+  .CTA1 h2{
+  font-weight:100;
+  }
+  #question{
+  font-size: 17px;
+  font-weight: lighter;
+  color: #232222;
+  letter-spacing: 0.8px;
+  }
+  #button>a{
+  border: 3px;
+  font-size: 20px;
+  color:palevioletred;
+  text-decoration:none;
+  margin-left: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 2px solid;
+  border-radius: 10px; 
+  letter-spacing: 1px;
+  }
+  #button>a:hover{/*切换按钮样式*/
+  color:white;
+  background-color: palevioletred;
+  border: 2px solid palevioletred;
+  }
+/*CTA1 end*/
+
+/*CTA2 statrt*/
+.CTA2{
+  height:50px;
+  width:350px;
+  background-color:palevioletred;
+  display: flex;
+  border-radius: 2px; 
+  position: absolute;
+  top: 50%; /* 垂直方向上的50%位置 */
+  left: 5%; /* 水平方向上的最左边 */
+  transform: translateY(-50%); /* 确保按钮垂直居中 */
+}
+
+.CTA2:hover {
+  transform: translateY(-50%) scale(1.05); /* 稍微增加尺寸 */
+  background-color:rgb(220, 56, 110); /* 改变背景颜色 */
+}
+
+.CTA2 h2{
+  width: 100%;
+  display: flex; /* 使用flexbox布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+
+.CTA2 h2 a{
+  text-decoration: none;
+  color:white;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+/*CTA2 end*/
+
+/* Homepage view start */
+.HomepageView{
+  width:100%;
+  height:95%;
+  background-image: url(Image/elegant-vegan-alcohol-arrangement.png);
+  background-size: cover;
+  filter: grayscale(30%);/*加灰度*/
+}
+/* Homepage view end */
+
+/* 社交媒体图标容器样式 */
+.SocialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4f4f4; /* 背景颜色 */
+}
+
+/* 链接样式 */
+.SocialMedia a {
+  margin: 0 10px;
+  color: #606060; /* 图标颜色 */
+  text-decoration: none; /* 去除下划线 */
+}
+
+/* 图标样式 */
+.SocialMedia ion-icon {
+  font-size: 30px; /* 图标大小 */
+  transition: color 0.3s; /* 过渡效果 */
+}
+
+/* 悬停效果 */
+.SocialMedia a:hover ion-icon {
+  color: #0056b3; /* 悬停时变更颜色 */
+}
+

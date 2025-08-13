@@ -1,0 +1,63 @@
+.Title{
+    position: relative;
+    width: 1410px;
+    left: 50px;
+}
+.Title h2{
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top:8px;;
+}
+.Title h3{
+    margin-top: 8px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.shell{
+    width: 90%;
+    height: 700px;
+    display: flex;
+    padding-left: 75px;
+    padding-top: 0;
+}
+.box{
+    flex: 1;
+    overflow: hidden; /* 确保如果内容超出了box 的边界，它会被隐藏而不是溢出。 Ensure that if the content exceeds the boundary of the box, it will be hidden rather than overflow. */
+    transition: .5s; /* 某些属性改变时（如在悬停时），过渡效果发生的时间为 0.5 秒 The transition effect occurs over 0.5 seconds when certain properties change (such as on hover). */
+    margin: 0 20px;
+    box-shadow: 10px 10px 20px rgb(0,0,0,.5); /* 阴影效果，阴影在所有方向上偏移了10像素，并有20像素的模糊半径，颜色为半透明黑色 Shadow effect, shadow offset by 10 pixels in all directions, with a 20-pixel blur radius, color is semi-transparent black */
+    border-radius: 20px;
+    border: 7px solid white;
+    background-color: white;
+}
+.box>img{
+    /* 设置图片宽度为box宽度的 200%，高度为box高度的85% 
+    Set the image width to 200% of the box width, height to 85% of the box height */
+    width: 200%;
+    height: 85%;
+    /* 保证图片按比例覆盖整个容器，即使它的尺寸超出容器也不会变形，超出部分会被裁剪。 
+    Ensure the image covers the entire container proportionally, 
+    it will not distort even if its size exceeds the container, excess parts will be cropped. */
+    object-fit: cover;
+    transition: .5s;
+}
+.box>span{
+    font: 200 45px;
+    text-align: center;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    /* 当鼠标悬停在 .box 上时，flex-basis: 40%; 改变了 .box 在 flex 容器中的基本尺寸，将其宽度设置为容器宽度的 40%。
+     When the mouse hovers over .box, flex-basis: 40%; changes the basic size of 
+     .box in the flex container, setting its width to 40% of the container's width. */
+    flex-basis: 40%;
+}
+.box:hover>img{
+    width: 655px;
+    height: 700px;
+}

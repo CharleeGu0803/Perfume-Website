@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--link to css file-->
+	 <link rel="stylesheet" href="History.css">
+	 <link rel="stylesheet" href="StyleDark.css">
+    <meta charset="UTF-8">
+    <title>History of Perfume</title>
+</head>
+<body>
+    <!--This is website title and navigation area-->
+	<div class = "TopNav">
+
+		<h1 class="WebsiteTitle"><a href="index.html"  aria-label="Homepage">Scentopia: Fragrance Odyssey</a></h1>
+
+		<ul class="NavRight">
+			<!--This is "Basics of Perfume" area-->
+			<li><a href="">Basics of Perfume</a><span>|</span>
+				<div class="slide1">
+					<ul>
+						<li><a href="History.html" aria-label="Perfume history">History of Perfume</a></li>
+						<li><a href="ClassicPerfume.html">Classic Perfumes</a></li>
+						<li><a href="">Composition of Perfume</a></li>
+						<li><a href="">Usage and Storage of Perfume</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<!--This is "Perfume Exploration Journey" area-->
+			<li><a href="">Perfume Exploration Journey</a><span>|</span>
+				<div class="slide2">
+					<ul>
+						<li><a href="PerfumeGallery.html" aria-label="Display beautiful perfume bottles">Perfume Bottles Gallery</a></li>
+						<li><a href="">Fragrance Mood Museum</a></li>
+						<li><a href="">Private Perfumery</a></li>
+					</ul>
+				</div>
+			</li>
+			
+			<!--This is "Latest Information" area-->
+			<li><a href="">Latest Information</a><span>|</span>
+				<div class="slide3">
+					<ul>
+						<li><a href="">Latest News</a></li>
+						<li><a href="">Latest Production</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<!--This is "About Us" area-->
+			<li><a href="">About Us</a><span>|</span>
+					<div class ="slide4">
+						<ul>
+							<li><a href = "MyPassion.html" aria-label="About why the author created this website">My passion</a></li>
+							<li><a href = "SiteMap.html" aria-label="Display all website links">Site Map</a></li>
+							<li><a href = "FeedbackForm.html" aria-label="Website User Feedback Form">Feedback Form</a></li>
+							<li><a href = "AboutSite.html" aria-label="Reflect on the author's website design">About Site</a></li>
+							<li><a href = "Verification.html" aria-label="Verification Report Screenshot">Verification</a></li>
+						</ul>
+					</div>
+			</li>
+			
+			<li id="Nav_ass"><a href="assignment.html" aria-label="Assignemnt requirements and their corresponding links.">Assignment</a></li>
+		</ul>
+	</div>
+
+	
+    <!--Introduction of Perfume History-->
+	<div class ="HistoryArea">
+		<h2>History of Perfume</h2>
+		<hr>
+    </div> 
+
+	<div id="main">
+		<div id="click-section">
+		  <div id="drawerboxes">
+			<div class="drawerbox active">
+			  <button class="drawer-btn active" onclick="slideTo(1)">Ancient Egyptian perfume history<span
+				  class="drawer-head">1</span></button>
+			</div>
+			<div class="drawerbox">
+			  <button class="drawer-btn" onclick="slideTo(2)">Ancient Greek perfume history<span
+				  class="drawer-head">2</span></button>
+			</div>
+			<div class="drawerbox">
+			  <button class="drawer-btn" onclick="slideTo(3)">Roman perfume history<span class="drawer-head">3</span></button>
+			</div>
+			<div class="drawerbox">
+			  <button class="drawer-btn" onclick="slideTo(4)">Ancient Arabian perfume history<span class="drawer-head">4</span></button>
+			</div>
+		  </div>
+		</div>
+		<div id="slide-section">
+		  <div id="slide-bar">
+			<div id="bar"></div>
+		  </div>
+		  <div id="card-section">
+			<div id="card1" class="card">
+			  <div class="card-title">Ancient Egyptian perfume history</div>
+			  <div class="card-content">The ancient Egyptians were the first to use perfume for personal pleasure.  
+				At the beginning, perfume was only allowed to be used by priests, and only priests could participate in the process of making perfume, 
+				so many temples at that time had special perfume laboratories. Later, Egyptian kings and queens also began to enjoy perfume. 
+				When they died, people would make their bodies into mummies and wrap them with spices made from myrrh and cinnamon. 
+				For a long period of time after that, only prominent people were eligible to decorate their tombs with perfume.
+				In 1992, when an archaeologist opened the pyramid tomb of Tutankhamen, an Egyptian pharaoh, 
+				he discovered his mummy and found several oil pots around him to store essential oils.
+				In 40 BC, during the reign of Egyptian Queen Cleopatra VII, 
+				the use of perfume reached an unprecedented climax, She often even uses 15 different fragrances and sesame oils for bathing, 
+				and even soaks her sails with perfume. When her regime began to disintegrate, she relied on beauty, 
+				using a large number of perfumes to lure the Roman emperor Julius Caesar and obtain their military help. 
+				When she died, Egypt's fanatical worship of perfume also came to an end.</div>
+			  <div class="card-img">
+				<img src="Image/History-Egyptian.png" alt="History-Egyptian">
+			  </div>
+			</div>
+			<div id="card2" class="card">
+			  <div class="card-title">Ancient Greek perfume history</div>
+			  <div class="card-content">The perfume was brought to Greece through the Phoenicians. 
+				Greece controlled the trade along the Mediterranean after Egypt lost its dominant power. 
+				At that time, there were a large number of female perfumers in Greece who improved the perfume manufacturing technology in Egypt.
+				Ancient Greek nationals consume a lot of perfumes every year and have the habit of using different perfumes in different parts of the body. 
+				The Athens politician and lawmaker at the time, Solon, believed that the use of perfume by the nation was rampant, and passed legislation to prohibit the free sale of perfume.
+				But he did not succeed, perfume is still the most popular product. 
+				Because people loved jasmine at that time, jasmine was also established as the national flower of Greece.</div>
+			  <div class="card-img">
+				<img src="Image/History-Greek.png" alt="History-Greek">
+			  </div>
+			</div>
+			<div id="card3" class="card">
+			  <div class="card-title">Roman perfume history</div>
+			  <div class="card-content">Influenced by the central and eastern regions and Greece, 
+				the Romans also began to indulge in perfumes. 
+				In the early days, the Roman Empire only allowed perfumes on two occasions-religious activities and funerals of prominent people. 
+				During the reign of the Roman Emperor Nero, the use of perfume reached a frenzied stage. When Nero's most beloved pope died,
+				 he used incense that was larger than the total amount of Arab shipments in a year.
+				The Romans were skilled in the creation of perfumes, 
+				and the use of perfumes was completely uncontrolled. 
+				They spray perfume on the floor and walls and even use perfume on their horses and dogs. 
+				At some banquets of high society, perfume fountains are even seen. </div>
+			  <div class="card-img">
+				<img src="Image/History-Roman.png" alt="History-Roman">
+			  </div>
+			</div>
+			<div id="card4" class="card">
+			  <div class="card-title">Ancient Arabian perfume history</div>
+			  <div class="card-content">The rise of Christianity greatly inhibited the use of perfume. 
+				Not only has daily use been drastically reduced, it even spread to the original religious customs. 
+				Christianity believes that perfume is a product with no practical use. 
+				However, the Arabs have maintained the habit of using perfume. 
+				The believers of Mohammed, the founder of Islam, love the smell of musk, roses, and amber.
+				 They even mixed these spices with the cement used to build the palace, which gave the palace a strong and lasting fragrance.
+				One of the most important inventions in the history of perfumes originated in the 10th century: 
+				the invention of the distiller has greatly improved the perfume manufacturing process-the the distillation method. 
+				Since then, a large area of ​land in Persia has been used for planting roses and transported to Baghdad in Arabia through trade, 
+				with the purpose of refining rose oil, and Baghdad has thus become the “capital of fragrance”. 
+				In the 12th century, the Arabs discovered that dissolving the essence in alcohol can slowly release the fragrance, 
+				and some concentrated essences are better preserved by alcohol.</div>
+			  <div class="card-img">
+				<img src="Image/History-Arabian.png" alt="History-Arabian">
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <script src="History.js"></script>
+</body>
+</html>
